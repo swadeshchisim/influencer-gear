@@ -10,6 +10,7 @@
 /* css custom styles */
 :root {
     --primary-text-color: #3a3a3a;
+    --primary-bg-color: #E02C6D;
     --primary-font: "Poppins", sans-serif;
     --secondary-font: "Inter", sans-serif;
     --ordinary-font: "Roboto", sans-serif;
@@ -17,10 +18,26 @@
     --font-weight-700: 700;
     --font-weight-600: 600;
 }
+/* common button */
+.btn-primary {
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: var(--font-weight-700);
+    background-color: var(--primary-bg-color);
+}
 
 /* header styles */
+header {
+    font-family: var(--primary-font);
+}
 .navbar {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "logo logo logo logo menu-item header-icon";
+    padding: 88px 120px 0;
 }
 
 /* logo styles */
@@ -28,19 +45,14 @@
     color: var(--primary-text-color);
     font-size: var(--font-size);
     font-weight: var(--font-weight-700);
+    grid-area: logo;
 }
 
 /* menu styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 88px 120px ;
-}
-.menu-area > ul {
+.menu-area, .menu-area > ul {
     display: flex;
     align-items: center;
-    column-gap: 2.125rem;
+    column-gap: 36px;
 }
 .menu-area > ul > li {
     list-style: none;
@@ -48,9 +60,16 @@
 .menu-area > ul > li > a {
     color: var(--primary-text-color);
     font-weight: var(--font-weight-600);
-    font-family: var(--primary-font);
     text-decoration: none;
 
+}
+.menu-item {
+    grid-area: menu-item;
+}
+
+/* header icon */
+.header-icon {
+    grid-area: header-icon;
 }
 
 /* header search icon */
@@ -61,4 +80,41 @@
 /* header cart icon */
 .fa-cart-shopping {
     font-size: 2.25rem;
+    padding-left: 36px;
+}
+
+/* banner styles */
+#banner-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px 70px;
+}
+.banner-title {
+    max-width: 582px;
+    color: var(--primary-text-color);
+    font-size: 52px;
+    line-height: 70px;
+}
+.banner-description {
+    max-width: 505px;
+    color: var(--primary-text-color);
+    font-weight: var(--font-weight-600);
+    padding: 16px 0;
+}
+
+/* banner button */
+.banner-btn {
+    border-radius: 41px;
+}
+
+/* banner image */
+.banner-img {
+    padding-right: 12px;
+}
+.banner-img img{
+    background: url(../images/banner-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
