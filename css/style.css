@@ -238,6 +238,11 @@ header {
     font-weight: var(--font-weight-700);
 }
 
+/* footer styles */
+footer {
+    text-align: center;
+}
+
 /* responsive styles for small device */
 @media screen and (max-width: 576px) {
     .navbar {
