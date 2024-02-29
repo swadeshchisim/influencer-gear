@@ -54,6 +54,7 @@ header {
     align-items: center;
     gap: 36px;
     margin-right: 36px;
+    grid-area: menu-item;
 }
 .menu-item > li {
     list-style: none;
@@ -64,12 +65,11 @@ header {
     text-decoration: none;
 
 }
-.menu-item {
-    grid-area: menu-item;
-}
 
 /* header icon */
 .header-icon {
+    display: flex;
+    align-items: center;
     grid-area: header-icon;
 }
 
@@ -125,6 +125,8 @@ header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
+    gap: 60px;
+    padding: 0 165px;
 }
 
 /* responsive styles for small device */
@@ -154,20 +156,41 @@ header {
 }
 
 /* responsive media query styles for medium device */
-@media screen and (min-width: 577px) and (max-width: 960px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
     .navbar {
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "menu-item" 
-        "logo" 
-        "header-icon"
+        "logo menu-item header-icon"
         ;
         justify-items: center;
-        gap: 30px;
+        gap: 20px;
         padding: 30px 0;
+    }
+    .menu-item {
+        gap: 10px;
+        margin-right: 10px;
+    }
+    .fa-cart-shopping {
+        font-size: 28px;
+        padding-left: 10px;
     }
     #banner-area {
         flex-direction: column-reverse;
         padding: 15px;
+    }
+    /* sponsor styles */
+    .sponsor-logos{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 50px;
+        gap: 15px;
+    }
+}
+
+/* responsive styles for extra large device */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .sponsor-logos{
+        grid-template-columns: repeat(7, 1fr);
+        padding: 50px;
+        gap: 15px;
     }
 }
