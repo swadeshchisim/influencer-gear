@@ -31,4 +31,7 @@
     margin: 0 auto;
   }
 
-  
+/* logo styles */
+.logo-area h4{
+    font-size: 1.5rem;
+}
