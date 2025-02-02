@@ -67,6 +67,7 @@ nav {
     list-style: none;
 }
 .menu-area li a {
+    display: inline-block;
     color: #3a3a3a;
     text-decoration: none;
     padding-right: 34px; 
@@ -105,7 +106,6 @@ nav {
         padding: 35px 0;
     }
     .menu-area li a {
-        display: inline-block;
         font-size: .875rem;
         padding-top: 15px;
         padding-right: 15px;
@@ -142,6 +142,9 @@ nav {
     #banner-area {
         flex-direction: column-reverse;
     }
+    .menu-area li a {
+        padding-top: 15px;
+    }
 }
 
 /* Media styles for large device */
@@ -155,5 +158,28 @@ nav {
     }
     #banner-area {
         flex-direction: column-reverse;
+    }
+    .menu-area li a {
+        padding-top: 15px;
+    }
+}
+
+/* Media query styles for extra large device */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    header {
+        width: 95%;
+    }
+    nav {
+        padding: 35px 0;
+    }
+    .banner-title {
+        width: 100%;
+        font-size: 3rem;
+    }
+    .banner-description {
+        width: 90%;
+    }
+    .banner-image-area {
+        width: 90%;
     }
 }
