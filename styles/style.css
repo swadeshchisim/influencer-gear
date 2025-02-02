@@ -56,3 +56,10 @@ nav {
     text-decoration: none;
     padding-left: 34px; 
 }
+
+/* Banner Styles */
+.banner-title {
+    color: #3A3A3A;
+    font-size: 52px;
+    line-height: 70px;
+}
