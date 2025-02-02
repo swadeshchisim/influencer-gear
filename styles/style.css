@@ -31,7 +31,28 @@
     margin: 0 auto;
   }
 
+/* Nav Styls */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 86px 0 50px;
+}
+
 /* logo styles */
 .logo-area h4{
     font-size: 1.5rem;
+}
+
+/* Menu styles */
+.menu-area ul {
+    display: flex;
+}
+.menu-area ul li {
+    list-style: none;
+}
+.menu-area li a {
+    color: #3a3a3a;
+    text-decoration: none;
+    padding-left: 34px; 
 }
