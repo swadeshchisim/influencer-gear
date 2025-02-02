@@ -102,7 +102,6 @@ nav {
     }
     nav {
         flex-direction: column;
-        /* align-items: start; */
         padding: 35px 0;
     }
     .menu-area li a {
@@ -112,7 +111,7 @@ nav {
         padding-right: 15px;
     }
     #banner-area{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0 16px;
         gap: 30px;
     }
@@ -128,5 +127,19 @@ nav {
     }
     .banner-image-area {
         width: 100%;
+    }
+}
+
+/* Media styles for medium devices */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+        padding: 35px 0;
+    }
+    #banner-area {
+        flex-direction: column-reverse;
     }
 }
