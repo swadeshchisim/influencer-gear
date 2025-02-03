@@ -154,6 +154,7 @@ nav {
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     header {
         width: 100%;
+        display: none;
     }
     nav {
         flex-direction: column;
@@ -161,9 +162,21 @@ nav {
     }
     #banner-area {
         flex-direction: column-reverse;
+        padding: 16px;
+    }
+    .banner-title {
+        width: 100%;
+        font-size: 3rem;
     }
     .menu-area li a {
         padding-top: 15px;
+    }
+    #sponsor-area {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+        padding: 0;
     }
 }
 
