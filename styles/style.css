@@ -120,6 +120,10 @@ nav {
     line-height: 70px;
     margin-bottom: 30px;
 }
+.product-collections {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 .product {
     width: 300px;
     padding: 14px;
