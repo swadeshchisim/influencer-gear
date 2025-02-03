@@ -112,6 +112,7 @@ nav {
 @media only screen and (max-width: 576px) {
     header {
         width: 100%;
+        display: none;
     }
     nav {
         flex-direction: column;
@@ -139,6 +140,13 @@ nav {
     }
     .banner-image-area {
         width: 100%;
+    }
+    #sponsor-area {
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+        padding: 0;
     }
 }
 
