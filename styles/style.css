@@ -28,6 +28,10 @@
   .btn-text {
     padding-right: 8px;
   }
+  .container {
+    max-width: 1048px;
+    margin: 0 auto;
+  }
 
   /* global margin & padding */
   *{
