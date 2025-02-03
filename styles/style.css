@@ -195,6 +195,13 @@ nav {
     .menu-area li a {
         padding-top: 15px;
     }
+    #sponsor-area {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 30px;
+        padding: 0;
+    }
 }
 
 /* Media query styles for extra large device */
@@ -214,5 +221,12 @@ nav {
     }
     .banner-image-area {
         width: 90%;
+    }
+    #sponsor-area {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 30px;
+        padding: 0;
     }
 }
