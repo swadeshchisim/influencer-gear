@@ -157,6 +157,15 @@ nav {
     line-height: 22px;
     letter-spacing: 0.1px;
 }
+.see-more-btn {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
 /* Media Query styles for small device */
 @media only screen and (max-width: 576px) {
     header {
