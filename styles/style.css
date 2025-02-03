@@ -166,6 +166,27 @@ nav {
     align-items: center;
     gap: 10px;
 }
+/* Feature section styles */
+.featured-area {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 0;
+}
+.featured-title {
+    color: #0A0826;
+    font-size: 38px;
+    line-height: 60px;
+}
+.featured-description {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 16px 0;
+}
 /* Media Query styles for small device */
 @media only screen and (max-width: 576px) {
     header {
@@ -210,6 +231,20 @@ nav {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .see-more-btn {
+        padding-right: 40px;
+    }
+    .featured-area {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .featured-text-area {
+        padding: 0 20px;
+    }
+    .featured-title {
+        line-height: normal;
+    }
 }
 
 /* Media styles for medium devices */
@@ -244,6 +279,20 @@ nav {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+    .featured-area {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .featured-image-area {
+        width: 90%;
+    }
+    .featured-image-area img {
+        width: 100%;
+    }
+    .featured-text-area {
+        padding: 0 40px;
+    }
 }
 
 /* Media styles for large device */
@@ -271,6 +320,20 @@ nav {
     .product-collections {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+    .featured-area {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .featured-image-area {
+        width: 90%;
+    }
+    .featured-image-area img {
+        width: 100%;
+    }
+    .featured-text-area {
+        padding: 0 40px;
     }
 }
 
@@ -302,5 +365,16 @@ nav {
     .product-collections {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
+        overflow: hidden;
+    }
+    .see-more-btn {
+        padding-right: 20px;
+    }
+    .featured-area {
+        width: 95%;
+        gap: 20px;
+    }
+    .featured-text-area {
+        padding: 0 30px;
     }
 }
