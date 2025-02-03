@@ -197,6 +197,10 @@ nav {
         gap: 30px;
         padding: 0;
     }
+    .product-collections {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 /* Media styles for medium devices */
@@ -227,6 +231,10 @@ nav {
         gap: 30px;
         padding: 0;
     }
+    .product-collections {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 /* Media styles for large device */
@@ -250,6 +258,10 @@ nav {
         justify-items: center;
         gap: 30px;
         padding: 0;
+    }
+    .product-collections {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
 
@@ -277,5 +289,9 @@ nav {
         justify-items: center;
         gap: 30px;
         padding: 0;
+    }
+    .product-collections {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 }
